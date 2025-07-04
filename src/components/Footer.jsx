@@ -121,8 +121,8 @@ const Footer = () => {
             {/* Spiritual Quote */}
             <div className="text-center mt-8 pt-8 border-t border-white/20">
               <p className="text-white/80 italic text-sm">
-                "Eu peço a meu Pai Eterno, que me dê força e amor,<br />
-                Para eu seguir esta linha, até o fim com fervor"
+                "Vou seguindo, vou seguindo, Vamos ver se nós acerta.<br />
+                O caminho de Jesus Cristo, Aonde andou com seus profetas"
               </p>
               <p className="text-white/60 text-xs mt-2">
                 - Hino da Doutrina do Daime
