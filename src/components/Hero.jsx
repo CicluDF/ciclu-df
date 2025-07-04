@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <a href="#contact" className="bg-white text-blue-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300">Saiba Mais</a>
+        <a href="#contato" className="bg-white text-blue-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300">Saiba Mais</a>
       </div>
     </section>
   );

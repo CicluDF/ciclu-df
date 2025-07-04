@@ -19,25 +19,35 @@ const Header = () => {
     { href: '#sobre', label: 'Sobre' },
     { href: '#missao', label: 'Missão' },
     { href: '#valores', label: 'Valores' },
-    { href: '#contato', label: 'Contato' }
+    { href: '#contato', label: 'Contato' },
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      }`}
+    >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src={logo} 
-              alt="CICLU DF Logo" 
-              className="h-12 w-12 object-contain rounded-full"
-            />
+            <img src={logo} alt="CICLU DF Logo" className="h-12 w-12 object-contain rounded-full" />
             <div className="hidden md:block">
-              <h1 className="text-lg font-bold text-ciclu-blue text-stroke-blue">CICLU DF</h1>
-              <p className="text-xs text-ciclu-blue text-stroke-blue">Centro de Iluminação Cristã</p>
+              <h1
+                className={`text-lg font-bold ${
+                  !isScrolled ? 'text-white text-stroke-white' : 'text-ciclu-blue text-stroke-blue'
+                }`}
+              >
+                CICLU DF
+              </h1>
+              <p
+                className={`text-xs ${
+                  !isScrolled ? 'text-white text-stroke-white' : 'text-ciclu-blue text-stroke-blue'
+                }`}
+              >
+                Centro de Iluminação Cristã
+              </p>
             </div>
           </div>
 
@@ -47,7 +57,9 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className={`hover:text-primary transition-colors duration-200 font-medium ${
+                  !isScrolled ? 'text-white' : 'text-foreground'
+                }`}
               >
                 {item.label}
               </a>
@@ -86,5 +98,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
