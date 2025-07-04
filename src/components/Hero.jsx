@@ -3,7 +3,7 @@ import { Sun, Moon, Star } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-blue-900 to-green-800 text-white py-20 px-4 text-center">
+    <section id="inicio" className="relative bg-gradient-to-r from-blue-900 to-green-800 text-white py-20 px-4 text-center">
       <div className="container mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">CICLU DF</h1>
         <p className="text-xl md:text-2xl mb-8">Centro de Iluminação Cristã Luz Universal do Distrito Federal</p>
